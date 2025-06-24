@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "repo_name": "microsoft/vscode",
+    "commit_hash": "0ab638ea",
+    "generated_at": "2025-06-12T18:54:06.742347",
+    "config": null,
+    "config_source": "none"
+  },
+  "pages": [
+    {
+      "id": "1",
+      "title": "VS Code Architecture Overview"
+    },
+    {
+      "id": "1.1",
+      "title": "Application Startup and Process Architecture"
+    },
+    {
+      "id": "1.2",
+      "title": "Build System and Package Management"
+    },
+    {
+      "id": "2",
+      "title": "Core Platform Services"
+    },
+    {
+      "id": "2.1",
+      "title": "Configuration System"
+    },
+    {
+      "id": "2.2",
+      "title": "Workbench Layout and Editor Management"
+    },
+    {
+      "id": "2.3",
+      "title": "UI Components: Lists and Trees"
+    },
+    {
+      "id": "3",
+      "title": "Monaco Editor"
+    },
+    {
+      "id": "3.1",
+      "title": "Text Model and View Model"
+    },
+    {
+      "id": "3.2",
+      "title": "Editor Configuration and Features"
+    },
+    {
+      "id": "4",
+      "title": "Extension System"
+    },
+    {
+      "id": "4.1",
+      "title": "Extension Host and Language Features"
+    },
+    {
+      "id": "4.2",
+      "title": "Extension Management"
+    },
+    {
+      "id": "5",
+      "title": "Integrated Terminal"
+    },
+    {
+      "id": "5.1",
+      "title": "Terminal Architecture and Process Management"
+    },
+    {
+      "id": "6",
+      "title": "Notebook Editor"
+    },
+    {
+      "id": "6.1",
+      "title": "Notebook Model and Components"
+    },
+    {
+      "id": "7",
+      "title": "Chat and AI Integration"
+    },
+    {
+      "id": "7.1",
+      "title": "Chat System Architecture"
+    },
+    {
+      "id": "8",
+      "title": "Source Control Management"
+    },
+    {
+      "id": "8.1",
+      "title": "SCM Framework"
+    },
+    {
+      "id": "8.2",
+      "title": "Git Extension"
+    },
+    {
+      "id": "9",
+      "title": "Debugging System"
+    },
+    {
+      "id": "9.1",
+      "title": "Debug Service and Protocol"
+    },
+    {
+      "id": "10",
+      "title": "Task System"
+    },
+    {
+      "id": "10.1",
+      "title": "Task Service and Execution"
+    }
+  ]
+}
