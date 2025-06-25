@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "mcp-doc-agent": {
-      "host": "localhost",
-      "port": 8000
-    }
-  }
-} 

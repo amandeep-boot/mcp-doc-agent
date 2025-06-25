@@ -8,6 +8,7 @@ dependencies = [
     "fastapi>=0.115.13",
     "httpx>=0.28.1",
     "mcp[cli]>=1.9.4",
+    "python-dotenv>=1.0.0",
 ]
 
 [tool.mcp]
