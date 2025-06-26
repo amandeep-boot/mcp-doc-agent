@@ -2,6 +2,8 @@ from typing import Any, Dict, Optional
 import httpx
 import asyncio
 import logging
+import os
+from pathlib import Path
 from mcp.server.fastmcp import FastMCP
 from deepwiki.tools import (
     get_repository_details,
@@ -16,7 +18,23 @@ logger = logging.getLogger(__name__)
 
 mcp = FastMCP("mcp-doc-agent")
 
+# Load the documentation generation prompt
+def load_documentation_prompt() -> str:
+    """Load the documentation generation prompt from prompt.txt"""
+    prompt_file = Path(__file__).parent / "deepwiki" / "prompt" / "prompt.txt"
+    try:
+        with open(prompt_file, 'r', encoding='utf-8') as f:
+            return f.read()
+    except FileNotFoundError:
+        logger.error(f"Prompt file not found: {prompt_file}")
+        return "You are a documentation generator for software repositories. Please analyze the repository and create comprehensive documentation."
 
+@mcp.prompt()
+def documentation_generator() -> str:
+    """
+    Get the comprehensive documentation generation prompt that explains how to use the available repository analysis tools to create GitBook-ready documentation.
+    """
+    return load_documentation_prompt()
 
 @mcp.tool()
 async def get_repo_details(
